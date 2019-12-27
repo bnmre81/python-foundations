@@ -19,26 +19,26 @@ print('''
 skill_1 = input("Choose a skill from above by entering its number: ")
 
 if skill_1 == '1':
-	cv['skills'].append('python')
+	cv['skills'].append(skills[0])
 elif skill_1 == '2':
-	cv['skills'].append('Django')
+	cv['skills'].append(skills[1])
 elif skill_1 == '3':
-	cv['skills'].append('c#')
+	cv['skills'].append(skills[2])
 elif skill_1 == '4':
-	cv['skills'].append('unity')
+	cv['skills'].append(skills[3])
 
 skill_2 = input("Choose another skill from above by entering its number: ")
 
 if skill_2 == '1':
-	cv['skills'].append('python')
+	cv['skills'].append(skills[0])
 elif skill_2 == '2':
-	cv['skills'].append('Django')
+	cv['skills'].append(skills[1])
 elif skill_2 == '3':
-	cv['skills'].append('c#')
+	cv['skills'].append(skills[2])
 elif skill_2 == '4':
-	cv['skills'].append('unity')
+	cv['skills'].append(skills[3])
 
-
+print(cv)
 if int(cv['age']) > 24 and int(cv['experience']) > 4 and 'python' in cv['skills'] and 'Django' in cv['skills']:
 	print("You have been accepted " + name)
 else:
