@@ -1,4 +1,5 @@
 
+
 class Employee():
 		
 	def __init__(self, name, age, salary, employment_year):
@@ -20,7 +21,7 @@ class Manager(Employee):
 
 	def __str__(self):
 		return ('''
-Name: {}, Age: {}, Salary: {}, Working Years: {}, bonus: '''.format(self.name, self.age, self.salary, self.employment_year, self.bonus))
+Name: {}, Age: {}, Salary: {}, Working Years: {}, bonus: {}'''.format(self.name, self.age, self.salary, self.employment_year, self.bonus))
 		
 
 menu = '''
