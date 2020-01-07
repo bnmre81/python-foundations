@@ -32,9 +32,6 @@ napesco_stock_price = napesco_soup.find_all(class_="market-summary__last-price d
 
 
 
-#National Petrolium Services NAPESCO 1.248
-#url: https://english.mubasher.info/markets/BK/stocks/NAPESCO/profile
-#element: <div class="market-summary__last-price up-icon-only">1,248.00</div>
 
 hcc_url = 'https://english.mubasher.info/markets/BK/stocks/HCC/profile'
 
@@ -45,14 +42,6 @@ hcc_soup = BeautifulSoup(hcc_page.text, 'html.parser')
 hcc_stock_price = hcc_soup.find_all(class_="market-summary__last-price unchanged-icon-only")[0].get_text()
 
 
-
-# Hilal Cement HCC 100
-#url: https://english.mubasher.info/markets/BK/stocks/HCC/profile
-#element: <div class="market-summary__last-price unchanged-icon-only">100.00</div>
-
-# Al kout industrial projects ALKOUT 850
-#url: https://english.mubasher.info/markets/BK/stocks/ALKOUT/profile
-#element: <div class="market-summary__last-price unchanged-icon-only">850.00</div>
 
 alhout_url = 'https://english.mubasher.info/markets/BK/stocks/ALKOUT/profile'
 
